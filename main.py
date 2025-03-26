@@ -11,7 +11,7 @@ def calculate_total_power(devices):
     :return: Total power consumption in watts
     """
     total_power = sum(devices)
-    logging.info(f"Total power consumption: {total_power} W")
+    #logging.info(f"Total power consumption: {total_power} W")
     return total_power
 
 
@@ -23,7 +23,7 @@ def calculate_total_energy(total_power, time_duration):
     :return: Total energy consumption in kWh
     """
     total_energy = (total_power / 1000) * time_duration
-    logging.info(f"Total energy consumption: {total_energy} kWh")
+    #logging.info(f"Total energy consumption: {total_energy} kWh")
     return total_energy
 
 
@@ -35,7 +35,7 @@ def calculate_energy_cost(total_energy, unit_cost):
     :return: Total estimated energy cost in Naira
     """
     total_cost = total_energy * unit_cost
-    logging.info(f"Estimated energy cost: {total_cost} Naira")
+   # logging.info(f"Estimated energy cost: {total_cost} Naira")
     return total_cost
 
 
