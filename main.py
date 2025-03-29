@@ -35,7 +35,7 @@ def calculate_energy_cost(total_energy, unit_cost):
     :return: Total estimated energy cost in Naira
     """
     total_cost = total_energy * unit_cost
-   # logging.info(f"Estimated energy cost: {total_cost} Naira")
+   #logging.info(f"Estimated energy cost: {total_cost} Naira")
     return total_cost
 
 
@@ -63,4 +63,15 @@ if __name__ == "__main__":
     # Display Results
     print(f"\nTotal Power Consumption: {total_power} W")
     print(f"Total Energy Consumption: {total_energy} kWh")
-    print(f"Estimated Energy Cost: {total_cost} Naira")
+    print(f"Estimated Energy Cost: {total_cost} ₦")
+
+
+"""
+New implementation to cook
+1. Input validation: Making sure the program does not break when wrong data type is entered
+2. Making the functions to be able to run as simple units and to be able to call one another if needs be
+3. Implement Flask so that the program can be run as a web app 
+
+
+
+"""
